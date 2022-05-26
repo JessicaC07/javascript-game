@@ -1,0 +1,136 @@
+body {
+  background-color: #37627a;
+  color: #f6ede1;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  height: 5rem;
+}
+
+header section {
+  width: 100vw;
+  height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  padding: .5rem 0;
+  margin: 0;
+}
+
+h2 {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+button {
+  padding: 1rem;
+}
+
+input:focus {
+  outline: #ffc107 solid 2px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Name Input Screen */
+
+#name-input-screen {
+  text-align: center;
+}
+
+#name-input-screen h2 {
+  margin: 2rem 0;
+}
+
+#name-input-screen input {
+  margin: 1rem 0;
+  padding: 1rem;
+}
+
+#name-input-screen button {
+  padding: 1rem;
+  margin: 0 0 0 0.5rem;
+}
+
+/* Level Selection Screen */
+
+#level-selection-screen {
+  text-align: center;
+}
+
+#level-selection-screen h2 {
+  margin: 0 0 3rem 0;
+}
+
+#level-selection-screen button {
+  padding: 3rem 1rem;
+}
+
+/* Game Screen */
+
+#game-screen {
+  padding: 2rem 1rem 0 1rem;
+  display: flex;
+  flex-direction: row;
+}
+
+#game-screen #metrics-column {
+  width: 20%;
+  padding: 0 1rem;
+}
+
+#game-screen #cards {
+  display: grid;
+}
+
+#game-screen #cards img {
+  display: block;
+  padding: 1rem;
+  max-width: 100%;
+  max-height: 40vh;
+  border-radius: 10%;
+}
+
+#cards.cards-8 {
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+#cards.cards-12 {
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+#cards.cards-18 {
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+#game-screen #cards.cards-18 img {
+  max-height: 29vh;
+}
+
+#game-screen p {
+  padding-top: 1rem;
+}
+
+#game-screen .three-buttons {
+  margin-top: 3rem;
+}
+
+#game-screen button {
+  margin: 0.5rem;
+}
+
+/* Congrats Screen */
+
+#congrats-screen {
+  text-align: center;
+}
+
+#congrats-screen h2 {
+  margin: 0 0 3rem 0;
+}
